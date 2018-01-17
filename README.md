@@ -42,6 +42,9 @@
 
 ### 8. 整个项目还在加快进度完成中，所有方法具体可以参考router中的index.js或者nfs_module中的nfs里面都包含有详细的中文说明，若方法中尚未包含具体代码即尚未完成。
 
+### 9. nfs中大部分的方法都是采用callback回调来返回结果的。并且编写了一个result的返回结果类。result总共有三个属性sate,message,data并且提供了三个方法result.set(state,message,data),result.error(message),result.success(message)。目前大部分的get方法的返回结果都是以这样的格式进行返回的。
+![](http://97.64.36.122:886/wp-content/uploads/2018/01/QQ%E6%88%AA%E5%9B%BE20180117140519.png)
+
 # 以下是将要解决或已经结局的部分
 
 ##可能存在的问题：module的安装在当前项目中无法安装，所有后续安装的module都是从另一个项目中拷过来的。所以暂时package.json的是没有包括的，等后续手动加进去不知道会不会有问题
