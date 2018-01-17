@@ -49,6 +49,12 @@ nfsFile.prototype.SetFileInfo = function(fileInfo,callback) {
                 status:0,
                 type:null
             };
+            if(!jsonObj.n_file_info){
+                jsonObj.n_file_info = new Array();
+            }
+            if(!jsonObj.n_file_info.file){
+                jsonObj.n_file_info.file = new Array();
+            }
             jsonObj.n_file_info.file.push(file);
             var builder = new xml2js.Builder();  // JSON->xml
             var xml =  builder.buildObject(jsonObj);
@@ -62,18 +68,39 @@ nfsFile.prototype.SetFileInfo = function(fileInfo,callback) {
     }
 };
 //删除文件
-nfsFile.prototype.DeleteFile = function(fileIds){
-    if(openDatabase){
-        var fileIdList = fileIds.split(",");
-        var sql ="update n_file_info set status =1 where id =?";
+nfsFile.prototype.DeleteFile = function(fileIds,callback){
+    if(nfsconfig.openDatabase){
+        var fileIds = fileIds.split(',').join("','");
+        var sql ="update n_file_info set status =1 where id in ('"+fileIds+"')";
         // get a connection from the pool
         db.pool.getConnection(function(err, connection) {
             // make the query
-            connection.query(sql,fileIdList, function(err, results) {
+            connection.query(sql,function(err, results) {
                 if (err) {
-                    return false;
+                    result.set("error","删除文件失败。");
+                    callback(result);
+                    return;
                 }
-                return true;
+                result.set("success","删除文件成功。",results);
+                //如果允许物理删除
+                if(nfsconfig.canPhysicalDelete){
+                    var sql1 ="select * from n_file_info where id in ('"+fileIds+"')";
+                    connection.query(sql1,function(err, results) {
+                        if (err) {
+                            result.set("error","删除文件成功，获取删除文件信息时失败。");
+                            callback(result);
+                            return;
+                        }
+                        for(var i=0;i<results.length;i++){
+                            fs.unlinkSync(results[i].path,function (results) {
+                                result.message +="删除文件id:"+results[i].id+"时出错，地址为："+results[i].path;
+                            })
+                        }
+                        //到这里删除文件结束
+                        result.message+="--文件物理删完成。"
+                    });
+                }
+                callback(result);
             });
         });
     }else{
@@ -83,15 +110,20 @@ nfsFile.prototype.DeleteFile = function(fileIds){
 //获取文件信息
 nfsFile.prototype.GetFileInfo = function(fileIds,callback){
     if(nfsconfig.openDatabase){
-        var sql ="select * from n_file_info where id ="+"'"+fileIds[0]+"'";
+        var fileIds = fileIds.split(',').join("','");
+        var sql ="select * from n_file_info where id in ('"+fileIds+"')";
+        //var sql = "select * from n_file_info where id in ('6ff8d240-fb2c-11e7-b162-2b923e671e29','f161e6a0-fa8c-11e7-abd6-7f16b36b493c')"
         // get a connection from the pool
         db.pool.getConnection(function(err, connection) {
             // make the query
             connection.query(sql,function(err, results) {
                 if (err) {
-                    return false;
+                    result.set("error","获取文件信息失败。")
+                    callback(result);
+                    return;
                 }
-                callback(results[0]);
+                result.set("success","获取文件信息成功。",results)
+                callback(result);
             });
         });
     }else{

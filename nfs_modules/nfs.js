@@ -48,6 +48,13 @@ var nfs = {
             callback(result);
         });
     },
+    //根据分片id获取分片信息，多个分片id以逗号隔开
+    getChunkInfo:function (fileIds,callback) {
+        var nFile = new nfsTempFile();
+        nFile.GetChunkInfo(fileIds,function (result) {
+            callback(result);
+        });
+    },
     //根据关键词模糊获取文件信息
     getFilesInfoByKeyword:function (keyword) {
 
@@ -65,11 +72,17 @@ var nfs = {
         })
     },
     //根据文件id删除文件，这里用到了nfsconfig中的是否物理删的参数
-    deleteFiles:function (fileIds) {
-
+    deleteFiles:function (fileIds,callback) {
+        var nFile = new nfsFile();
+        nFile.DeleteFile(fileIds,function (result) {
+            callback(result);
+        });
     },
-    deleteChunks:function (chunkIds) {
-
+    deleteChunks:function (chunkIds,callback) {
+        var nFile = new nfsTempFile();
+        nFile.deleteChunks(chunkIds,function (result) {
+            callback(result);
+        });
     },
     //根据文件id下载文件， fileIds:文件id,多个文件以逗号隔开 isZip：是否压缩包形式下载，多个文件自动多个文件下载
     downLoadFiles:function (fileIds,isZip) {

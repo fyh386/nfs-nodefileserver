@@ -1,6 +1,7 @@
 var express = require('express');
 var multer = require('multer/index');
 var nfs = require('../nfs_modules/nfs');
+var result = require('../nfs_modules/result');
 var dir = require('../nfs_modules/makedir');
 var nfsconfig = require('../nfsconfig.json');
 var uuid = require('../node_modules/node-uuid');
@@ -66,12 +67,14 @@ router.post('/uploadsimplefile',multer({storage:storage}).array('file'),function
             res.send(result);
         });
     }else {
-        res.send("error:上传的文件数为零！");
+        result.error("上传的文件数为零！");
+        res.send(result);
     }
 });
 
 router.post('/uploadchunkfile',multer({storage:storage}).array('file'),function (req,res,next) {
     var filemd5 =req.body.md5;
+    if(!filemd5){res.render('error');}
     var chunk = req.body.chunk;
     var chunks = req.body.chunks;
     var uploadSourceType =req.body.uploadSourceType;
@@ -86,10 +89,26 @@ router.post('/uploadchunkfile',multer({storage:storage}).array('file'),function 
 });
 
 router.get('/getFilesInfo',function (req,res,next) {
-    var fileIds = req.body.fileIds;
+    var fileIds = req.query.fileIds;
     if(!!fileIds){
+        nfs.getFilesInfo(fileIds,function (result) {
+            res.send(result);
+        })
+    }else {
+        result.error("文件id为空，请重试。");
+        res.send(result);
+    }
+});
 
-
+router.get('/getChunkInfo',function (req,res,next) {
+    var fileIds = req.query.fileIds;
+    if(!!fileIds){
+        nfs.getChunkInfo(fileIds,function (result) {
+            res.send(result);
+        })
+    }else {
+        result.error("分片id为空，请重试。");
+        res.send(result);
     }
 });
 
@@ -128,25 +147,66 @@ router.use('/downLoadFiles',function (req,res,next) {
 
 router.get('/fileExist',function (req,res) {
     var filemd5 = req.query.md5;
-    nfs.fileExist(filemd5,function (result) {
+    if(!!filemd5){
+        nfs.fileExist(filemd5,function (result) {
+            res.send(result);
+        });
+    }else {
+        result.error("文件md5为空，请重试。");
         res.send(result);
-    });
+    }
 })
 
 router.get('/chunkExist',function (req,res) {
     var filemd5 = req.query.md5;
     var chunk = req.query.chunk;
-    nfs.chunkExist(filemd5,chunk,function (result) {
+    if(!!filemd5&&!!chunk){
+        nfs.chunkExist(filemd5,chunk,function (result) {
+            res.send(result);
+        });
+    }else {
+        result.error("分片的md5或分片号为空，请重试。");
         res.send(result);
-    });
+    }
 })
 
 router.get('/mergeFile',function (req,res) {
     var filemd5 = req.query.md5;
-    nfs.mergeFile(filemd5,function(result){
+    if(!!filemd5){
+        nfs.mergeFile(filemd5,function(result){
+            res.send(result);
+            return;
+        })
+    }else {
+        result.error("md5为空，请重试。");
         res.send(result);
-        return;
-    })
+    }
+})
+
+router.get('/deleteFiles',function (req,res) {
+    var fileIds = req.query.fileIds;
+    if(!!fileIds){
+        nfs.deleteFiles(fileIds,function(result){
+            res.send(result);
+            return;
+        })
+    }else {
+        result.error("文件id为空，请重试。");
+        res.send(result);
+    }
+})
+
+router.get('/deleteChunks',function (req,res) {
+    var chunkIds = req.query.fileIds;
+    if(!!chunkIds){
+        nfs.deleteChunks(chunkIds,function(result){
+            res.send(result);
+            return;
+        })
+    }else {
+        result.error("分片id为空，请重试。");
+        res.send(result);
+    }
 })
 
 module.exports = router;

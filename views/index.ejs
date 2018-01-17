@@ -27,6 +27,10 @@
     <button onclick="download()">下载</button>
     <button onclick="download2()">根据ID获取二进制流</button>
     <div>内容：<input id="twostream" /></div>
+    <div><button onclick="getFileInfo()">获取文件信息</button><span>请于控制台查看中</span></div>
+    <div><button onclick="getChunkInfo()">获取分片信息</button><span>请于控制台查看中</span></div>
+    <div><button onclick="deleteFile()">删除文件</button><span>请于控制台查看中</span></div>
+    <div><button onclick="deleteChunk()">删除分片</button><span>请于控制台查看中</span></div>
     <div style="margin-top: 20px">MD5:<input id="MD5"/></div>
     <div>chunk:<input id="CHUNK"/></div>
     <div><button onclick="fileExist()">验证文件</button><span>根据md5值验证文件是否存在</span></div>
@@ -332,7 +336,7 @@ function mergeFile() {
     $.ajax({
         type:"get",
         async:false,
-        url:'mergeFile',
+        url:'/mergeFile',
         data:{md5:fileMd5},
         success:function (data) {
             console.log(data);
@@ -340,4 +344,55 @@ function mergeFile() {
     })
 }
 
+function getFileInfo() {
+    var fileIds = $("#FileID2").val();
+    $.ajax({
+        type:"get",
+        async:false,
+        url:'/getFilesInfo',
+        data:{fileIds:fileIds},
+        success:function (data) {
+            console.log(data);
+        }
+    })
+}
+
+function getChunkInfo() {
+    var fileIds = $("#FileID2").val();
+    $.ajax({
+        type:"get",
+        async:false,
+        url:'/getChunkInfo',
+        data:{fileIds:fileIds},
+        success:function (data) {
+            console.log(data);
+        }
+    })
+}
+
+function deleteFile() {
+    var fileIds = $("#FileID2").val();
+    $.ajax({
+        type:"get",
+        async:false,
+        url:'/deleteFiles',
+        data:{fileIds:fileIds},
+        success:function (data) {
+            console.log(data);
+        }
+    })
+}
+
+function deleteChunk() {
+    var fileIds = $("#FileID2").val();
+    $.ajax({
+        type:"get",
+        async:false,
+        url:'/deleteChunks',
+        data:{fileIds:fileIds},
+        success:function (data) {
+            console.log(data);
+        }
+    })
+}
 </script>

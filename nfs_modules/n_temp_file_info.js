@@ -34,13 +34,15 @@ nfsTempFile.prototype.SetTempFileInfo = function(fileInfo,callback) {
         fs.readFile(nfsconfig.xmlPath, 'utf-8', function (err, result) {
             var jsonObj = fastXmlParser.parse(result);
             console.log('xml解析成json:' + JSON.stringify(jsonObj));
-            var file = {
+            var tempfile = {
                 id: uuid.v1(),
                 expand_name: fileInfo.ext,
                 file_size: fileInfo.filesize,
                 name: fileInfo.filename,
                 path: fileInfo.path,
                 md5: fileInfo.md5,
+                chunk:fileInfo.chunk,
+                chunks:fileInfo.chunks,
                 create_time: Date.now(),
                 edit_time: null,
                 description: "cs",
@@ -51,7 +53,13 @@ nfsTempFile.prototype.SetTempFileInfo = function(fileInfo,callback) {
                 status: 0,
                 type: null
             };
-            jsonObj.n_file_info.file.push(file);
+            if(!jsonObj.n_file_info){
+                jsonObj.n_file_info = new Array();
+            }
+            if(!jsonObj.n_file_info.tempfile){
+                jsonObj.n_file_info.tempfile = new Array();
+            }
+            jsonObj.n_file_info.tempfile.push(tempfile);
             var builder = new xml2js.Builder();  // JSON->xml
             var xml = builder.buildObject(jsonObj);
             fs.writeFile(nfsconfig.xmlPath, xml, function (err) {
@@ -61,6 +69,29 @@ nfsTempFile.prototype.SetTempFileInfo = function(fileInfo,callback) {
             });
             console.log(xml);
         });
+    }
+};
+
+nfsTempFile.prototype.GetChunkInfo = function(chunkIds,callback){
+    if(nfsconfig.openDatabase){
+        var chunkIds = chunkIds.split(',').join("','");
+        var sql ="select * from n_temp_file_info where id in ('"+chunkIds+"')";
+        //var sql = "select * from n_file_info where id in ('6ff8d240-fb2c-11e7-b162-2b923e671e29','f161e6a0-fa8c-11e7-abd6-7f16b36b493c')"
+        // get a connection from the pool
+        db.pool.getConnection(function(err, connection) {
+            // make the query
+            connection.query(sql,function(err, results) {
+                if (err) {
+                    result.set("error","获取分片信息失败。")
+                    callback(result);
+                    return;
+                }
+                result.set("success","获取分片信息成功。",results)
+                callback(result);
+            });
+        });
+    }else{
+
     }
 };
 
@@ -170,6 +201,46 @@ nfsTempFile.prototype.MergeFile = function (fileMd5,callback){
         });
     }else {
 
+
+    }
+};
+
+nfsTempFile.prototype.deleteChunks = function(chunkIds,callback){
+    if(nfsconfig.openDatabase){
+        var chunkIds = chunkIds.split(',').join("','");
+        var sql ="update n_temp_file_info set status =1 where id in ('"+chunkIds+"')";
+        // get a connection from the pool
+        db.pool.getConnection(function(err, connection) {
+            // make the query
+            connection.query(sql,function(err, results) {
+                if (err) {
+                    result.set("error","删除分片失败。");
+                    callback(result);
+                    return;
+                }
+                result.set("success","删除分片成功。",results);
+                //如果允许物理删除
+                if(nfsconfig.canPhysicalDelete){
+                    var sql1 ="select * from n_temp_file_info where id in ('"+chunkIds+"')";
+                    connection.query(sql1,function(err, results) {
+                        if (err) {
+                            result.set("error","删除分片成功，获取删除文件信息时失败。");
+                            callback(result);
+                            return;
+                        }
+                        for(var i=0;i<results.length;i++){
+                            fs.unlinkSync(results[i].path,function (results) {
+                                result.message +="删除分片id:"+results[i].id+"时出错，地址为："+results[i].path;
+                            })
+                        }
+                        //到这里删除文件结束
+                        result.message+="--分片物理删完成。"
+                    });
+                }
+                callback(result);
+            });
+        });
+    }else{
 
     }
 };

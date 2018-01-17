@@ -11,7 +11,7 @@
   "*xmlType":"default",
   "*xmlFormat":"",
   "filePath":"d:/",
-  "*canPhysicalDelete": false,
+  "canPhysicalDelete": true,
   "*securityLevel":"low",
   "*isEncrypt":false,
   "*encryptFileKey":"123456",
