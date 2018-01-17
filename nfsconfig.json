@@ -1,0 +1,43 @@
+{
+  "openDatabase": true,
+  "poolContent":{
+    "host"     : "localhost",
+    "user"     : "root",
+    "password" : "root",
+    "port": "3306",
+    "database": "nfs_nodefileserver"
+  },
+  "xmlPath":"d:/test.xml",
+  "*xmlType":"default",
+  "*xmlFormat":"",
+  "filePath":"d:/",
+  "*canPhysicalDelete": false,
+  "*securityLevel":"low",
+  "*isEncrypt":false,
+  "*encryptFileKey":"123456",
+  "*fileFilter":"*",
+  "*fileBackup":{
+    "serverType":"上传的服务商类型：阿里，七牛....",
+    "server":"10.10.10.10",
+    "token":"kajyegr7a23jhgbdsk73zsdf9034",
+    "accessKey":"",
+    "secretKey ":"",
+    "period ":"24*1,备份周期到时候按小时算，这里表示1天备份一次",
+    "type":"备份类型：全量，增量"
+  },
+  "annotation":{
+    "content":"此为注释字段，用于告知每个字段的含义",
+    "openDatabase":"是否开启数据库，true:开启数据库，会启用poolContent连接池配置。false:不开启数据库，会启用xmlPath的地址下同数据可格式读写",
+    "poolContent":"数据库连接池配置目前只支持Mysql,后续会增加",
+    "xmlPath":"不开启数据库时调用的本地文件数据读写",
+    "xmlType":"xml的存储方式，default：默认不区分，number:按条数区分 date:按日期或者月份之类的区分 ext:按文件格式区分，该功能后期实现",
+    "xmlFormat":"500,",
+    "filePath":"文件上传的地址",
+    "canPhysicalDelete": "是否允许物理删，当接收到文件删除请求时一般为数据库逻辑删除，开启后会删除对应的文件（不推荐开启）。",
+    "securityLevel":"安全等级，该部分会默认提供一套安全验证机制，用户也可以手动自定义，low:不验证所有，middle:验证部分，heigh:验证所有。",
+    "isEncrypt":"本地文件存储时是否进行加密",
+    "encryptFileKey":"文件加密的密码",
+    "fileFilter":"允许的文件类型，以逗号分隔，*表示所有。该部分也可以由前端进行验证",
+    "fileBackup":"文件备份机制，暂时希望接上七牛云之类的文件云服务，该部分尚未有任何思路，只是有这样的想法"
+  }
+}

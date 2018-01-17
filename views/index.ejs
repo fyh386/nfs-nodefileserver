@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/webuploader/webuploader.css" />
+    <link rel="stylesheet" type="text/css" href="/webuploader/style.css" />
+  </head>
+  <style>
+    input{
+      border:1px solid;
+    }
+
+  </style>
+  <body>
+  <div style="display: inline-block;float: left;margin: 20px" >
+    <div>
+      <button id="open_chunk" onclick="openchunk()">开启分片</button>
+      <div>是否公有：<input id="ispublic" /></div>
+      <button id="pick_demo">上传</button>
+    </div>
+    <!--<div>MD5:<input id="MD5"/></div>-->
+    <!--<div>FileID:<input id="FileID" /></div>-->
+    <div style="margin-top:20px">需下载的FileID:<input id="FileID2" /></div>
+    <div>多个文件下载请上传两个文件后以：xxxxx,xxxxx的格式</div>
+    <div>是否压缩下载？填true or false:<input id="iszip" /></div>
+    <button onclick="download()">下载</button>
+    <button onclick="download2()">根据ID获取二进制流</button>
+    <div>内容：<input id="twostream" /></div>
+    <div style="margin-top: 20px">MD5:<input id="MD5"/></div>
+    <div>chunk:<input id="CHUNK"/></div>
+    <div><button onclick="fileExist()">验证文件</button><span>根据md5值验证文件是否存在</span></div>
+    <div><button onclick="chunkExist()">验证分片</button><span>根据md5值和分片数验证分片是否存在</span></div>
+    <div><button onclick="mergeFile()">请求合并</button></div>
+  </div>
+  <div style="display: inline-block;margin: 20px;width: 350px;height: 300px;background-color: #00B7FF;">
+    <span>返回内容：</span>
+    <div id="content">
+      <table>
+        <tr>
+          <td>
+            state:
+          </td>
+          <td id="state">
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            message:
+          </td>
+          <td id="message">
+
+          </td>
+        </tr>
+        <tr><td style="border-top:solid ;width: 350px">fileinfo</td></tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            filename:
+          </td>
+          <td id="filename">
+
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            fileid:
+          </td>
+          <td id="fileid">
+
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            chunk:
+          </td>
+          <td id="chunk">
+
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            chunks:
+          </td>
+          <td id="chunks">
+
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            filesize:
+          </td>
+          <td id="filesize">
+
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            ext:
+          </td>
+          <td id="ext">
+
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            md5:
+          </td>
+          <td id="md5">
+
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            path:
+          </td>
+          <td id="path">
+
+          </td>
+        </tr>
+        <tr style="border-bottom: solid">
+          <td style="padding-left: 15px;">
+            filetype:
+          </td>
+          <td id="filetype">
+
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script type="text/javascript" src="/javascripts/jquery-1.11.0.js"></script>
+  <script type="text/javascript" src="/webuploader/webuploader.js"></script>
+  <script type="text/javascript" src="/webuploader/jquery.md5.js"></script>
+  </body>
+</html>
+
+<script>
+//  function test() {
+//      window.location ='/downloadFiles?fileIds=497930e0-f9b7-11e7-aa06-6914cba9644b&&isZip=false'
+//  }
+var uploader;
+CreateUpload();
+var count = 0;
+function CreateUpload() {
+    window.parent.$(".uploadingBg .uploadClose").click();
+    uploader = WebUploader.create({
+        dnd:'body',
+        // 选完文件后，是否自动上传。
+        auto: false,
+        // swf文件路径
+        swf: '../webuploader/Uploader.swf',
+        chunkSize: 2 * 1024 * 1024,
+        // 文件接收服务端。
+        server: '/uploadsimplefile',
+        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+        pick: '#pick_demo',
+        // 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
+        resize: false,
+        threads :1,
+    });
+
+    //文件进度条队列
+    uploader.on('fileQueued', function (file) {
+        uploader.md5File(file)
+        // 及时显示进度
+            .progress(function (percentage) {
+                console.log('Percentage:', percentage);
+            })
+            // 完成
+            .then(function (val) {
+                uploader.option("formData", { md5: val });
+                uploader.upload();
+            });
+    });
+
+    uploader.on('uploadBeforeSend', function (file, data) {
+
+    });
+
+    uploader.on('uploadSuccess', function (file, response) {
+        debugger;
+        $("#state").text(response.state);
+        $("#message").text(response.message);
+        $("#filename").text(response.data.filename);
+        $("#fileid").text(response.data.fileid);
+        $("#filesize").text(response.data.filesize);
+        $("#ext").text(response.data.ext);
+        $("#md5").text(response.data.md5);
+        $("#path").text(response.data.path);
+        $("#filetype").text(response.data.filetype);
+        //如果出错返回错误结果
+//        if (response.haserror == "true") {
+//
+//        } else {
+//            $("#MD5").val(response.fileinfo.md5);
+//            $("#FileID").val(response.fileid);
+//            //文件上传成功，将返回结果写入本地数据库
+//            //单个文件上传成功，发送请求记录结果。
+//            if (response.fileinfo.chunk == null || response.fileinfo.chunks == null) {
+//                //$.ajax(
+//                //        {
+//                //            type: "post",
+//                //            async: false,
+//                //            url: 'xxxxxxxx',
+//                //                        父级文件夹id                文件id                   文件详情
+//                //            data: { folderId: xxxx, fileId: response.fileid, fileInfo: response.fileinfo },
+//                //            success: function (data) {
+//                //                数据库记录完成操作，一般提示上传成功
+//                //                data = data;
+//
+//                //            }
+//                //        });
+//            } else {
+//                //根据chunk得知是分片文件，请求文件合并
+//                $.ajax(
+//                    {
+//                        //文件上传完成后请求文件服务器进行文件合并
+//                        //如果合并出错，根据出错的分片进行重传
+//                        type: "post",
+//                        async: false,
+//                        url: '/File/MergeFile',
+//                        data: { filename: response.fileinfo.name, md5: response.fileinfo.md5, chunks: response.fileinfo.chunks },
+//                        success: function (data) {
+//                            data = JSON.parse(data)
+//                            if (data.haserror == "true" || data.haserror == true) {
+//                                //出错，获取出错分片
+//                                var lackchunks = data.lackchunks;
+//                                //分片出错分片重新上传，这里没做
+//                                alert(data.errormessage);
+//                            } else {
+//                                //合并结果为报错，即合并成功，继续向服务器请求数据库记录
+//                                //$.ajax(
+//                                //{
+//                                //    type: "post",
+//                                //    async: false,
+//                                //    url: 'xxxxxxxx',
+//                                //    data: { folderId: olderId, fileId: data.fileid, fileInfo: data.fileinfo },
+//                                //    success: function (data) {
+//                                //        data = data;
+//                                //       一般提示上传成功并且页面部分重新加载
+//                                //    }
+//                                //});
+//                            }
+//                        }
+//                    });
+//            }
+//        }
+    });
+
+    uploader.on('uploadSuccess', function (file, response) {
+        var a = response;
+        $("#MD5").val(a.fileinfo.md5);
+        $("#FileID").val(a.fileid);
+        console.log(a);
+    });
+}
+
+function download() {
+    var fileid = $("#FileID2").val();
+    window.open("http://localhost:3000/downloadFiles?fileIds=" + fileid + "&&isZip=" + $("#iszip").val());
+}
+
+function download2() {
+    var fileid = $("#FileID2").val();
+    $.ajax({
+        url: "/File/GetFileByteById?fileid=" + fileid,
+        dataType: "json",
+        async: false,
+        success: function (data) {
+            $("#twostream").val(data);
+        },
+        error: function (data) {
+            $("#twostream").val(data);
+        }
+    });
+}
+
+function openchunk() {
+    uploader.option("server","/uploadchunkfile");
+    uploader.option("chunked", true);
+    uploader.option("formData", { isfinished: false });
+}
+
+function fileExist() {
+    var filemd5 = $("#MD5").val();
+    $.ajax({
+        type: "get",
+        async: false,
+        url: '/fileExist',
+        data: {md5:filemd5},
+        success: function (data) {
+            if(data.state=="success"){
+                if(data.data){
+                    alert("该md5的文件已存在。")
+                }else {
+                    alert("该md5的文件不存在。")
+                }
+            }else{
+                alert(data.message);
+            }
+            console.log(data);
+        }
+    })
+}
+
+function chunkExist() {
+    var filemd5 = $("#MD5").val();
+    var chunk = $("#CHUNK").val();
+    $.ajax({
+        type: "get",
+        async: false,
+        url: '/chunkExist',
+        data: {md5:filemd5,chunk:chunk},
+        success: function (data) {
+            if(data.state=="success"){
+                if(data.data){
+                    alert("该md5的分片已存在。")
+                }else {
+                    alert("该md5的分片不存在。")
+                }
+            }else{
+                alert(data.message);
+            }
+            console.log(data);
+        }
+    })
+}
+
+function mergeFile() {
+    var fileMd5 = $("#MD5").val();
+    $.ajax({
+        type:"get",
+        async:false,
+        url:'mergeFile',
+        data:{md5:fileMd5},
+        success:function (data) {
+            console.log(data);
+        }
+    })
+}
+
+</script>
