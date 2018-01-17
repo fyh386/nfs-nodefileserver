@@ -18,6 +18,7 @@
     "database": "nfs_nodefileserver"
   },
 ```
+### 当openDatabase:false时回去读取xmlpath，在xmlpath处进行xml格式的文件存储，该功能暂时在部分功能下会失效（还没完成）
 
 ### 3、之后就可以启动项目并访问端口号3000来进行整个文件服务的测试
 
@@ -32,17 +33,23 @@
 
 ### 3. nfs提供了一个文件下载的方法：downLoadFiles。
 
-### 4. nfs提供了一个获取文件信息的方法：getFilesInfo。
+### 4. nfs提供了一个获取文件信息的方法：getFilesInfo。该方法为get方法，根据提交请求的参数fileIds（多个文件id以英文的逗号','隔开），返回对应的文件信息
 
-### 5. nfs提供了一个验证文件是否存在的方法：fileExist。
+### 5. nfs提供了一个获取分片信息的方法：getChunkInfo。该方法为get方法，根据提交请求的参数fileIds（多个分片id以英文的逗号','隔开），返回对应的分片信息
 
-### 6. nfs提供了一个验证分片是否存在的方法：chunkExist。
+### 6. nfs提供了一个验证文件是否存在的方法：fileExist。
 
-### 7. nfs提供了一个文件合并的方法：mergeFile。
+### 7. nfs提供了一个验证分片是否存在的方法：chunkExist。
 
-### 8. 整个项目还在加快进度完成中，所有方法具体可以参考router中的index.js或者nfs_module中的nfs里面都包含有详细的中文说明，若方法中尚未包含具体代码即尚未完成。
+### 8. nfs提供了一个文件合并的方法：mergeFile。
 
-### 9. nfs中大部分的方法都是采用callback回调来返回结果的。并且编写了一个result的返回结果类。result总共有三个属性sate,message,data并且提供了三个方法result.set(state,message,data),result.error(message),result.success(message)。目前大部分的get方法的返回结果都是以这样的格式进行返回的。
+### 9. nfs提供了一个文件删除的方法：deleteFiles。该方法为get方法，根据提交请求的参数fileIds（多个文件id以英文的逗号','隔开），当配置文件canPhysicalDelete（是否允许物理删除）=false时指进行数据库status的置为1，否则会去文件的对应位置进行删除操作。
+
+### 10. nfs提供了一个分片删除的方法：deleteChunks。该方法为get方法，根据提交请求的参数fileIds（多个分片id以英文的逗号','隔开），当配置文件canPhysicalDelete（是否允许物理删除）=false时指进行数据库status的置为1，否则会去文件的对应位置进行删除操作。
+
+### 11. 整个项目还在加快进度完成中，所有方法具体可以参考router中的index.js或者nfs_module中的nfs里面都包含有详细的中文说明，若方法中尚未包含具体代码即尚未完成。
+
+### 12. nfs中大部分的方法都是采用callback回调来返回结果的。并且编写了一个result的返回结果类。result总共有三个属性sate,message,data并且提供了三个方法result.set(state,message,data),result.error(message),result.success(message)。目前大部分的get方法的返回结果都是以这样的格式进行返回的。
 ![](http://97.64.36.122:886/wp-content/uploads/2018/01/QQ%E6%88%AA%E5%9B%BE20180117140519.png)
 
 # 以下是将要解决或已经结局的部分
