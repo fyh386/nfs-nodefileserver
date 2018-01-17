@@ -34,7 +34,7 @@
 ### 3. nfs提供了一个文件下载的方法：downLoadFiles。
 
 ### 4. nfs提供了一个获取文件信息的方法：getFilesInfo。该方法为get方法，根据提交请求的参数fileIds（多个文件id以英文的逗号','隔开），返回对应的文件信息
-
+![](http://97.64.36.122:886/wp-content/uploads/2018/01/QQ截图20180117152804.png)
 ### 5. nfs提供了一个获取分片信息的方法：getChunkInfo。该方法为get方法，根据提交请求的参数fileIds（多个分片id以英文的逗号','隔开），返回对应的分片信息
 
 ### 6. nfs提供了一个验证文件是否存在的方法：fileExist。
@@ -44,7 +44,7 @@
 ### 8. nfs提供了一个文件合并的方法：mergeFile。
 
 ### 9. nfs提供了一个文件删除的方法：deleteFiles。该方法为get方法，根据提交请求的参数fileIds（多个文件id以英文的逗号','隔开），当配置文件canPhysicalDelete（是否允许物理删除）=false时指进行数据库status的置为1，否则会去文件的对应位置进行删除操作。
-
+![](http://97.64.36.122:886/wp-content/uploads/2018/01/QQ截图20180117164504.png)
 ### 10. nfs提供了一个分片删除的方法：deleteChunks。该方法为get方法，根据提交请求的参数fileIds（多个分片id以英文的逗号','隔开），当配置文件canPhysicalDelete（是否允许物理删除）=false时指进行数据库status的置为1，否则会去文件的对应位置进行删除操作。
 
 ### 11. 整个项目还在加快进度完成中，所有方法具体可以参考router中的index.js或者nfs_module中的nfs里面都包含有详细的中文说明，若方法中尚未包含具体代码即尚未完成。
