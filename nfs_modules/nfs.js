@@ -3,7 +3,9 @@ var nfsFile = require("./n_file_info");
 
 var nfsTempFile = require("./n_temp_file_info");
 
-var fileBack = require("./qiniu_backup");
+var qiNiuBack = require("./qiniu_backup");
+
+var oss = require("./ali_backup");
 
 var nfsconfig = require('../nfsconfig.json');
 
@@ -111,8 +113,8 @@ var nfs = {
             callback(result);
         })
     },
-    fileBackUp:function (callback) {
-        var backObj = new fileBack();
+    fileBackUpByQiNiu:function (callback) {
+        var backObj = new qiNiuBack();
         //要上传的空间
         bucket = nfsconfig.fileBackup.storageName;
         //上传到七牛后保存的文件名
@@ -123,6 +125,14 @@ var nfs = {
             backObj.uploadFile(results,key,filePath,function (results) {
                 callback(results);
             })
+        })
+    },
+    fileBackUpByAli:function (callback) {
+        var backObj = new oss();
+        //要上传文件的本地路径
+        filePath = nfsconfig.filePath+"upload/file/19e16a00-fb2e-11e7-87a5-2d8e545e26ee";
+        backObj.uploadFile(filePath,function (results) {
+            callback(results);
         })
     }
 }

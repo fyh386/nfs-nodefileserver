@@ -22,10 +22,11 @@
     "serverType":"上传的服务商类型：阿里，七牛....",
     "server":"10.10.10.10",
     "token":"kajyegr7a23jhgbdsk73zsdf9034",
-    "accessKey":"kA0k0FsJIH1W_nreT0Th35OGCelPkgP9qPYlrCBk",
-    "secretKey":"Gw_j2jh_x5tJH3br-KGLoQcr36o4vTCFEGC_LqT1",
+    "accessKey":"公钥",
+    "secretKey":"秘钥",
     "period":"24*1,备份周期到时候按小时算，这里表示1天备份一次",
-    "type":"备份类型：全量，增量"
+    "type":"备份类型：全量，增量",
+    "backTime":"备份时间，一般备份过程都较长，所以建议在晚上进行备份。"
   },
   "annotation":{
     "content":"此为注释字段，用于告知每个字段的含义",

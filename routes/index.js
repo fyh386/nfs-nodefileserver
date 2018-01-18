@@ -209,8 +209,15 @@ router.get('/deleteChunks',function (req,res) {
     }
 })
 
-router.get('/fileBack',function (req,res) {
-    nfs.fileBackUp(function(result){
+router.get('/fileBackUpByQiNiu',function (req,res) {
+    nfs.fileBackUpByQiNiu(function(result){
+        res.send(result);
+        return;
+    })
+})
+
+router.get('/fileBackUpByAli',function (req,res) {
+    nfs.fileBackUpByAli(function(result){
         res.send(result);
         return;
     })

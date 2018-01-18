@@ -37,7 +37,8 @@
     <div><button onclick="chunkExist()">验证分片</button><span>根据md5值和分片数验证分片是否存在</span></div>
     <div><button onclick="mergeFile()">请求合并</button></div>
 
-    <div><button onclick="fileBack()">开启七牛云备份</button></div>
+    <div><button onclick="fileBackUpByQiNiu()">开启七牛云备份</button></div>
+    <div><button onclick="fileBackUpByAli()">开启阿里云备份</button></div>
   </div>
   <div style="display: inline-block;margin: 20px;width: 350px;height: 300px;background-color: #00B7FF;">
     <span>返回内容：</span>
@@ -398,11 +399,22 @@ function deleteChunk() {
     })
 }
 
-function fileBack() {
+function fileBackUpByQiNiu() {
     $.ajax({
         type:"get",
         async:false,
-        url:'/fileBack',
+        url:'/fileBackUpByQiNiu',
+        success:function (data) {
+            console.log(data);
+        }
+    })
+}
+
+function fileBackUpByAli() {
+    $.ajax({
+        type:"get",
+        async:false,
+        url:'/fileBackUpByAli',
         success:function (data) {
             console.log(data);
         }
