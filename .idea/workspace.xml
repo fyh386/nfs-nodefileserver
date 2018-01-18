@@ -2,11 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="041e86e6-d554-419c-a2bf-e82fd5253e01" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/gopher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nfs_modules/qiniu_backup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/atlab_check_qiniu_auth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/bucket_image_unimage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/cdn_create_timestamp_antileech_url.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/cdn_get_bandwidth_data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/cdn_get_flux_data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/cdn_get_log_list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/cdn_prefetch_urls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/cdn_refresh_urls_dirs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/create_uptoken.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/form_upload_simple.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/http_https_proxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/prefop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/resume_upload_simple.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_batch_change_type.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_batch_chgm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_batch_copy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_batch_delete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_batch_delete_after_days.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_batch_move.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_batch_stat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_change_mime.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_change_type.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_copy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_delete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_delete_after_days.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_download.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_fetch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_list_prefix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_move.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_prefetch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_stat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/rs_upload_token.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/examples/video_pfop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/index.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/.bin/mime" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/.bin/mime.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/mime/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/mime/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/mime/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/mime/build/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/mime/build/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/mime/cli.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/mime/mime.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/mime/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/node_modules/mime/types.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/auth/digest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/cdn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/fop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/rpc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/resume.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/rs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/zone.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/linq/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/linq/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/linq/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/linq/extensions/linq.qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/linq/linq.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/linq/linq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/linq/linq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/linq/minify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/linq/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/linq/sample/tutorial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/StorageEngine.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/doc/README-ko.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/doc/README-zh-cn.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/_util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/disk-storage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/error-handling.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/expected-files.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/express-integration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/fields.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/file-filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/file-ordering.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/files/empty.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/files/large.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/files/medium.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/files/small0.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/files/small1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/files/tiny0.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/files/tiny1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/functionality.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/issue-232.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/memory-storage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/none.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/reuse-middleware.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/select-field.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/multer/test/unicode.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfs_modules/n_file_info.js" afterPath="$PROJECT_DIR$/nfs_modules/n_file_info.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfs_modules/n_temp_file_info.js" afterPath="$PROJECT_DIR$/nfs_modules/n_temp_file_info.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfs_modules/nfs.js" afterPath="$PROJECT_DIR$/nfs_modules/nfs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfsconfig.json" afterPath="$PROJECT_DIR$/nfsconfig.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bignumber.js/package.json" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fast-xml-parser/bin/parser.js" afterPath="$PROJECT_DIR$/node_modules/fast-xml-parser/bin/parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fast-xml-parser/bin/validator.js" afterPath="$PROJECT_DIR$/node_modules/fast-xml-parser/bin/validator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fast-xml-parser/lib/parser.js" afterPath="$PROJECT_DIR$/node_modules/fast-xml-parser/lib/parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fast-xml-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/fast-xml-parser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/multer/README.md" afterPath="$PROJECT_DIR$/node_modules/multer/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/multer/package.json" afterPath="$PROJECT_DIR$/node_modules/multer/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/package.json" afterPath="$PROJECT_DIR$/node_modules/mysql/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-uuid/package.json" afterPath="$PROJECT_DIR$/node_modules/node-uuid/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sax/package.json" afterPath="$PROJECT_DIR$/node_modules/sax/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlstring/package.json" afterPath="$PROJECT_DIR$/node_modules/sqlstring/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/xml2js/package.json" afterPath="$PROJECT_DIR$/node_modules/xml2js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/package.json" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
@@ -25,26 +137,103 @@
       <file leaf-file-name="nfs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nfs_modules/nfs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="80" column="44" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+            <state relative-caret-position="437">
+              <caret line="118" column="53" lean-forward="true" selection-start-line="118" selection-start-column="53" selection-end-line="118" selection-end-column="53" />
               <folding>
-                <element signature="e#373#975#0" expanded="false" />
-                <element signature="e#1954#2097#0" expanded="false" />
-                <element signature="e#2164#2172#0" expanded="false" />
-                <element signature="e#2255#2263#0" expanded="false" />
-                <element signature="e#2312#2467#0" expanded="false" />
-                <element signature="e#2999#3007#0" expanded="false" />
-                <element signature="e#3096#3104#0" expanded="false" />
-                <element signature="e#3162#3170#0" expanded="false" />
-                <element signature="e#3235#3366#0" expanded="false" />
-                <element signature="e#3413#3555#0" expanded="false" />
+                <element signature="e#1119#1703#0" expanded="false" />
+                <element signature="e#1781#1919#0" expanded="false" />
+                <element signature="e#1997#2140#0" expanded="false" />
+                <element signature="e#2207#2215#0" expanded="false" />
+                <element signature="e#2298#2306#0" expanded="false" />
+                <element signature="e#2355#2510#0" expanded="false" />
+                <element signature="e#2598#2735#0" expanded="false" />
+                <element signature="e#2783#2927#0" expanded="false" />
+                <element signature="e#3042#3050#0" expanded="false" />
+                <element signature="e#3139#3147#0" expanded="false" />
+                <element signature="e#3205#3213#0" expanded="false" />
+                <element signature="e#3278#3409#0" expanded="false" />
+                <element signature="e#3456#3598#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <file leaf-file-name="layer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/layer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="94" column="4" lean-forward="false" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="213" column="8" lean-forward="false" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+              <folding>
+                <element signature="e#417#465#0" expanded="false" />
+                <element signature="e#502#1257#0" expanded="false" />
+                <element signature="n#!!block;n#fileFilter#0" expanded="false" />
+                <element signature="e#1808#2203#0" expanded="false" />
+                <element signature="e#2302#2759#0" expanded="false" />
+                <element signature="e#2814#3048#0" expanded="false" />
+                <element signature="e#3103#3337#0" expanded="false" />
+                <element signature="e#3393#4382#0" expanded="false" />
+                <element signature="e#4428#4657#0" expanded="false" />
+                <element signature="e#4704#4987#0" expanded="false" />
+                <element signature="e#5033#5277#0" expanded="false" />
+                <element signature="e#5325#5576#0" expanded="false" />
+                <element signature="e#5625#5880#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/qiniu/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-399">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qiniu_backup.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nfs_modules/qiniu_backup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#330#498#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/form.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="171" column="2" lean-forward="false" selection-start-line="171" selection-start-column="2" selection-end-line="171" selection-end-column="2" />
+              <folding>
+                <element signature="n#!!block;n#FormUploader#0" expanded="false" />
+                <element signature="e#1025#2338#0" expanded="false" />
+                <element signature="n#!!block;n#putReq#0" expanded="false" />
+                <element signature="e#3028#3035#0" expanded="false" />
+                <element signature="e#3127#3327#0" expanded="false" />
+                <element signature="e#3422#3493#0" expanded="false" />
+                <element signature="n#!!block;n#createMultipartForm#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/qiniu/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -53,71 +242,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <file leaf-file-name="digest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/qiniu/qiniu/auth/digest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1444">
-              <caret line="198" column="25" lean-forward="false" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="25" />
-              <folding>
-                <element signature="e#417#465#0" expanded="false" />
-                <element signature="e#502#1257#0" expanded="false" />
-                <element signature="n#!!block;n#fileFilter#0" expanded="false" />
-                <element signature="e#1808#2203#0" expanded="false" />
-                <element signature="e#2302#2759#0" expanded="false" />
-                <element signature="e#3103#3337#0" expanded="false" />
-                <element signature="e#3393#4382#0" expanded="false" />
-                <element signature="e#5325#5576#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="n_file_info.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nfs_modules/n_file_info.js">
+      <file leaf-file-name="rs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/rs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="907">
-              <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state relative-caret-position="114">
+              <caret line="711" column="0" lean-forward="true" selection-start-line="711" selection-start-column="0" selection-end-line="711" selection-end-column="0" />
               <folding>
-                <element signature="e#5126#5791#0" expanded="false" />
-                <element signature="e#5865#7204#0" expanded="false" />
-                <element signature="e#5897#7190#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nfs_modules/result.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding>
-                <element signature="e#52#145#0" expanded="false" />
-                <element signature="e#176#245#0" expanded="false" />
-                <element signature="e#278#349#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="n_temp_file_info.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nfs_modules/n_temp_file_info.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1121">
-              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-              <folding>
-                <element signature="e#3824#5196#0" expanded="false" />
-                <element signature="e#5259#8343#0" expanded="false" />
+                <element signature="e#12396#13147#0" expanded="false" />
+                <element signature="n#!!block;n#changeTypeReq#0" expanded="false" />
+                <element signature="e#13864#14251#0" expanded="false" />
+                <element signature="n#!!block;n#PutPolicy#0" expanded="false" />
+                <element signature="e#20875#21475#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -126,28 +271,8 @@
       <file leaf-file-name="nfsconfig.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nfsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5443">
-              <caret line="394" column="9" lean-forward="false" selection-start-line="394" selection-start-column="9" selection-end-line="394" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="33" selection-end-column="69" />
+            <state relative-caret-position="114">
+              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -190,12 +315,15 @@
         <option value="$PROJECT_DIR$/nfs_modules/result.js" />
         <option value="$PROJECT_DIR$/public/webuploader/upload.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/nfs_modules/n_file_info.js" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/nfs_modules/n_temp_file_info.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="vm:402" />
+        <option value="vm:396" />
         <option value="$PROJECT_DIR$/nfsconfig.json" />
         <option value="$PROJECT_DIR$/nfs_modules/nfs.js" />
+        <option value="$PROJECT_DIR$/nfs_modules/qiniu_backup.js" />
       </list>
     </option>
   </component>
@@ -210,9 +338,9 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="24" />
-    <option name="y" value="81" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="54" />
+    <option name="y" value="8" />
     <option name="width" value="1278" />
     <option name="height" value="766" />
   </component>
@@ -232,6 +360,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,14 +377,17 @@
             <path>
               <item name="nfs-nodefileserver" type="b2602c69:ProjectViewProjectNode" />
               <item name="nfs-nodefileserver" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nfs-nodefileserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nfs-nodefileserver" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,9 +401,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\WebstormProjects\nfs-nodefileserver\node_modules" />
       <recent name="C:\Users\Administrator\WebstormProjects\nfs-nodefileserver\public\webuploader" />
       <recent name="C:\Users\Administrator\WebstormProjects\nfs-nodefileserver" />
-      <recent name="C:\Users\Administrator\WebstormProjects\nfs-nodefileserver\node_modules" />
       <recent name="C:\Users\Administrator\WebstormProjects\nfs-nodefileserver\public\xml" />
       <recent name="C:\Users\Administrator\WebstormProjects\nfs-nodefileserver\public\database" />
     </key>
@@ -307,11 +440,13 @@
       <workItem from="1516150518437" duration="6929000" />
       <workItem from="1516162109123" duration="12160000" />
       <workItem from="1516178850361" duration="30000" />
+      <workItem from="1516179163691" duration="903000" />
+      <workItem from="1516240779948" duration="10368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117011000" />
+    <option name="totallyTimeSpent" value="128282000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,18 +458,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
+    <frame x="54" y="8" width="1278" height="766" extended-state="1" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14052045" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26020816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29322034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37118644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35096154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -379,76 +515,11 @@
           <option name="timeStamp" value="149" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="150" />
+      <option name="time" value="167" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nfs_modules/makedir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="true" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/n_file_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="53" column="11" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="53" selection-end-column="11" />
-          <folding>
-            <element signature="e#5126#5791#0" expanded="false" />
-            <element signature="e#5865#7204#0" expanded="false" />
-            <element signature="e#5897#7190#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/n_temp_file_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#3824#5196#0" expanded="false" />
-            <element signature="e#5259#8343#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7823">
-          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-1.11.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/webuploader/webuploader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/multer/doc/README-ko.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/Pool.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -488,13 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-380">
           <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datapool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -676,14 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -692,54 +748,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/nfs_modules/n_temp_file_info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="198" column="25" lean-forward="false" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="25" />
+        <state relative-caret-position="304">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
-            <element signature="e#417#465#0" expanded="false" />
-            <element signature="e#502#1257#0" expanded="false" />
-            <element signature="n#!!block;n#fileFilter#0" expanded="false" />
-            <element signature="e#1808#2203#0" expanded="false" />
-            <element signature="e#2302#2759#0" expanded="false" />
-            <element signature="e#3103#3337#0" expanded="false" />
-            <element signature="e#3393#4382#0" expanded="false" />
-            <element signature="e#5325#5576#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/nfs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="80" column="44" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
-          <folding>
-            <element signature="e#373#975#0" expanded="false" />
-            <element signature="e#1954#2097#0" expanded="false" />
-            <element signature="e#2164#2172#0" expanded="false" />
-            <element signature="e#2255#2263#0" expanded="false" />
-            <element signature="e#2312#2467#0" expanded="false" />
-            <element signature="e#2999#3007#0" expanded="false" />
-            <element signature="e#3096#3104#0" expanded="false" />
-            <element signature="e#3162#3170#0" expanded="false" />
-            <element signature="e#3235#3366#0" expanded="false" />
-            <element signature="e#3413#3555#0" expanded="false" />
+            <element signature="e#3824#5196#0" expanded="false" />
+            <element signature="e#5259#8343#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nfs_modules/n_file_info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="907">
-          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state relative-caret-position="427">
+          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="25" />
           <folding>
             <element signature="e#5126#5791#0" expanded="false" />
             <element signature="e#5865#7204#0" expanded="false" />
@@ -748,22 +771,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/n_temp_file_info.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/qiniu/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1121">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="e#3824#5196#0" expanded="false" />
-            <element signature="e#5259#8343#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5443">
-          <caret line="394" column="9" lean-forward="false" selection-start-line="394" selection-start-column="9" selection-end-line="394" selection-end-column="9" />
+        <state relative-caret-position="7294">
+          <caret line="405" column="0" lean-forward="false" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datapool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/qiniu/qiniu/auth/digest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/rs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="711" column="0" lean-forward="true" selection-start-line="711" selection-start-column="0" selection-end-line="711" selection-end-column="0" />
+          <folding>
+            <element signature="e#12396#13147#0" expanded="false" />
+            <element signature="n#!!block;n#changeTypeReq#0" expanded="false" />
+            <element signature="e#13864#14251#0" expanded="false" />
+            <element signature="n#!!block;n#PutPolicy#0" expanded="false" />
+            <element signature="e#20875#21475#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="171" column="2" lean-forward="false" selection-start-line="171" selection-start-column="2" selection-end-line="171" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!block;n#FormUploader#0" expanded="false" />
+            <element signature="e#1025#2338#0" expanded="false" />
+            <element signature="n#!!block;n#putReq#0" expanded="false" />
+            <element signature="e#3028#3035#0" expanded="false" />
+            <element signature="e#3127#3327#0" expanded="false" />
+            <element signature="e#3422#3493#0" expanded="false" />
+            <element signature="n#!!block;n#createMultipartForm#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs_modules/nfs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="118" column="53" lean-forward="true" selection-start-line="118" selection-start-column="53" selection-end-line="118" selection-end-column="53" />
+          <folding>
+            <element signature="e#1119#1703#0" expanded="false" />
+            <element signature="e#1781#1919#0" expanded="false" />
+            <element signature="e#1997#2140#0" expanded="false" />
+            <element signature="e#2207#2215#0" expanded="false" />
+            <element signature="e#2298#2306#0" expanded="false" />
+            <element signature="e#2355#2510#0" expanded="false" />
+            <element signature="e#2598#2735#0" expanded="false" />
+            <element signature="e#2783#2927#0" expanded="false" />
+            <element signature="e#3042#3050#0" expanded="false" />
+            <element signature="e#3139#3147#0" expanded="false" />
+            <element signature="e#3205#3213#0" expanded="false" />
+            <element signature="e#3278#3409#0" expanded="false" />
+            <element signature="e#3456#3598#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="94" column="4" lean-forward="false" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/qiniu/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/qiniu/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs_modules/qiniu_backup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#330#498#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="213" column="8" lean-forward="false" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+          <folding>
+            <element signature="e#417#465#0" expanded="false" />
+            <element signature="e#502#1257#0" expanded="false" />
+            <element signature="n#!!block;n#fileFilter#0" expanded="false" />
+            <element signature="e#1808#2203#0" expanded="false" />
+            <element signature="e#2302#2759#0" expanded="false" />
+            <element signature="e#2814#3048#0" expanded="false" />
+            <element signature="e#3103#3337#0" expanded="false" />
+            <element signature="e#3393#4382#0" expanded="false" />
+            <element signature="e#4428#4657#0" expanded="false" />
+            <element signature="e#4704#4987#0" expanded="false" />
+            <element signature="e#5033#5277#0" expanded="false" />
+            <element signature="e#5325#5576#0" expanded="false" />
+            <element signature="e#5625#5880#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

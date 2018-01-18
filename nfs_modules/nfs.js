@@ -3,6 +3,8 @@ var nfsFile = require("./n_file_info");
 
 var nfsTempFile = require("./n_temp_file_info");
 
+var fileBack = require("./qiniu_backup");
+
 var nfsconfig = require('../nfsconfig.json');
 
 var nfs = {
@@ -107,6 +109,20 @@ var nfs = {
         var nFile = new nfsTempFile();
         nFile.ChunkExist(md5,chunk,function (result) {
             callback(result);
+        })
+    },
+    fileBackUp:function (callback) {
+        var backObj = new fileBack();
+        //要上传的空间
+        bucket = nfsconfig.fileBackup.storageName;
+        //上传到七牛后保存的文件名
+        key = '19e16a00-fb2e-11e7-87a5-2d8e545e26ee';
+        //要上传文件的本地路径
+        filePath = nfsconfig.filePath+"upload/file/19e16a00-fb2e-11e7-87a5-2d8e545e26ee";
+        backObj.uptoken(bucket,key,function (results) {
+            backObj.uploadFile(results,key,filePath,function (results) {
+                callback(results);
+            })
         })
     }
 }

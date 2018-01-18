@@ -209,4 +209,11 @@ router.get('/deleteChunks',function (req,res) {
     }
 })
 
+router.get('/fileBack',function (req,res) {
+    nfs.fileBackUp(function(result){
+        res.send(result);
+        return;
+    })
+})
+
 module.exports = router;

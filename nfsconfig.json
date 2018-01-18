@@ -16,13 +16,15 @@
   "*isEncrypt":false,
   "*encryptFileKey":"123456",
   "*fileFilter":"*",
-  "*fileBackup":{
+  "fileBackup":{
+    "storageName":"nfstest",
+    "domainName":"p2qerbmg1.bkt.clouddn.com",
     "serverType":"上传的服务商类型：阿里，七牛....",
     "server":"10.10.10.10",
     "token":"kajyegr7a23jhgbdsk73zsdf9034",
-    "accessKey":"",
-    "secretKey ":"",
-    "period ":"24*1,备份周期到时候按小时算，这里表示1天备份一次",
+    "accessKey":"kA0k0FsJIH1W_nreT0Th35OGCelPkgP9qPYlrCBk",
+    "secretKey":"Gw_j2jh_x5tJH3br-KGLoQcr36o4vTCFEGC_LqT1",
+    "period":"24*1,备份周期到时候按小时算，这里表示1天备份一次",
     "type":"备份类型：全量，增量"
   },
   "annotation":{
