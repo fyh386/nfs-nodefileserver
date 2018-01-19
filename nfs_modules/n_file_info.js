@@ -130,6 +130,29 @@ nfsFile.prototype.GetFileInfo = function(fileIds,callback){
 
     }
 };
+//根据关键字获取文件信息
+nfsFile.prototype.getFilesInfoByKeyword = function(fileIds,callback){
+    if(nfsconfig.openDatabase){
+        var fileIds = fileIds.join("','");
+        var sql ="select * from n_file_info where id in ('"+fileIds+"')";
+        //var sql = "select * from n_file_info where id in ('6ff8d240-fb2c-11e7-b162-2b923e671e29','f161e6a0-fa8c-11e7-abd6-7f16b36b493c')"
+        // get a connection from the pool
+        db.pool.getConnection(function(err, connection) {
+            // make the query
+            connection.query(sql,function(err, results) {
+                if (err) {
+                    result.set("error","获取文件信息失败。")
+                    callback(result);
+                    return;
+                }
+                result.set("success","获取文件信息成功。",results)
+                callback(result);
+            });
+        });
+    }else{
+
+    }
+};
 //修改文件信息
 nfsFile.prototype.ModifyFileInfo = function(fileInfo){
     if(openDatabase){

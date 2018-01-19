@@ -63,7 +63,10 @@ var nfs = {
     },
     //根据关键词模糊获取文件信息
     getFilesInfoByKeyword:function (keyword) {
-
+        var nFile = new nfsFile();
+        nFile.getFilesInfoByKeyword(keyword,function (result) {
+            callback(result);
+        });
     },
     //根据文件id获取文件的byte流，不支持多个文件，大文件也可能会导致崩溃没有试过
     getFileByte:function (fileid) {
