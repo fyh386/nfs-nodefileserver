@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="041e86e6-d554-419c-a2bf-e82fd5253e01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfs_modules/n_file_info.js" afterPath="$PROJECT_DIR$/nfs_modules/n_file_info.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfs_modules/nfs.js" afterPath="$PROJECT_DIR$/nfs_modules/nfs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfs_modules/result.js" afterPath="$PROJECT_DIR$/nfs_modules/result.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/qs/dist/qs.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/qs/dist/qs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/lib/Pool.js" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/Pool.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/rs.js" afterPath="$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/rs.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,24 +19,86 @@
       <file leaf-file-name="nfs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nfs_modules/nfs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="66" column="35" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+            <state relative-caret-position="189">
+              <caret line="134" column="41" lean-forward="true" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
               <folding>
                 <element signature="e#506#1108#0" expanded="false" />
                 <element signature="e#1209#1793#0" expanded="false" />
-                <element signature="e#2087#2230#0" expanded="false" />
-                <element signature="e#2528#2536#0" expanded="false" />
-                <element signature="e#2585#2740#0" expanded="false" />
-                <element signature="e#2828#2965#0" expanded="false" />
-                <element signature="e#3013#3157#0" expanded="false" />
-                <element signature="e#3272#3280#0" expanded="false" />
-                <element signature="e#3369#3377#0" expanded="false" />
-                <element signature="e#3435#3443#0" expanded="false" />
-                <element signature="e#3508#3639#0" expanded="false" />
-                <element signature="e#3686#3828#0" expanded="false" />
-                <element signature="e#3872#4364#0" expanded="false" />
-                <element signature="e#4406#4656#0" expanded="false" />
-                <element signature="e#4725#5600#0" expanded="false" />
+                <element signature="e#1871#2020#0" expanded="false" />
+                <element signature="e#2098#2241#0" expanded="false" />
+                <element signature="e#2308#2456#0" expanded="false" />
+                <element signature="e#2539#2547#0" expanded="false" />
+                <element signature="e#2596#2751#0" expanded="false" />
+                <element signature="e#2839#2976#0" expanded="false" />
+                <element signature="e#3024#3168#0" expanded="false" />
+                <element signature="e#3283#3291#0" expanded="false" />
+                <element signature="e#3380#3388#0" expanded="false" />
+                <element signature="e#3446#3454#0" expanded="false" />
+                <element signature="e#3519#3650#0" expanded="false" />
+                <element signature="e#3697#3839#0" expanded="false" />
+                <element signature="e#4736#5611#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ali_backup.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nfs_modules/ali_backup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="makedir.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nfs_modules/makedir.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              <folding>
+                <element signature="e#128#792#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="n_file_info.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nfs_modules/n_file_info.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="110" column="58" lean-forward="false" selection-start-line="110" selection-start-column="58" selection-end-line="110" selection-end-column="58" />
+              <folding>
+                <element signature="e#406#2607#0" expanded="false" />
+                <element signature="e#2673#4201#0" expanded="false" />
+                <element signature="e#4270#5051#0" expanded="false" />
+                <element signature="e#4302#5037#0" expanded="false" />
+                <element signature="e#5135#5916#0" expanded="false" />
+                <element signature="e#5980#6645#0" expanded="false" />
+                <element signature="e#6719#8058#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qiniu_backup.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nfs_modules/qiniu_backup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nfs_modules/result.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <folding>
+                <element signature="e#119#504#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -51,7 +107,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="-117">
               <caret line="114" column="52" lean-forward="false" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
               <folding>
                 <element signature="e#502#1257#0" expanded="false" />
@@ -66,76 +122,17 @@
                 <element signature="e#6315#6559#0" expanded="false" />
                 <element signature="e#6607#6858#0" expanded="false" />
                 <element signature="e#6907#7162#0" expanded="false" />
-                <element signature="e#7216#7312#0" expanded="false" />
                 <element signature="e#7364#7458#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="n_file_info.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nfs_modules/n_file_info.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="893">
-              <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-              <folding>
-                <element signature="e#2673#4201#0" expanded="false" />
-                <element signature="e#4270#5051#0" expanded="false" />
-                <element signature="e#5135#5916#0" expanded="false" />
-                <element signature="e#5980#6645#0" expanded="false" />
-                <element signature="e#6719#8058#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nfs_modules/result.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/rs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="658" column="47" lean-forward="false" selection-start-line="658" selection-start-column="47" selection-end-line="658" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pool.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/Pool.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2394">
-              <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node_modules/express/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/express/node_modules/qs/dist/qs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="353" column="21" lean-forward="true" selection-start-line="353" selection-start-column="21" selection-end-line="353" selection-end-column="21" />
+            <state relative-caret-position="211">
+              <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -144,8 +141,8 @@
       <file leaf-file-name="n_temp_file_info.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nfs_modules/n_temp_file_info.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="13" column="68" lean-forward="false" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+            <state relative-caret-position="294">
+              <caret line="247" column="23" lean-forward="false" selection-start-line="247" selection-start-column="23" selection-end-line="247" selection-end-column="23" />
               <folding>
                 <element signature="e#482#2885#0" expanded="false" />
                 <element signature="e#2952#3752#0" expanded="false" />
@@ -157,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qiniu_backup.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nfs_modules/qiniu_backup.js">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="284">
+              <caret line="416" column="29" lean-forward="false" selection-start-line="416" selection-start-column="29" selection-end-line="416" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -211,12 +208,12 @@
         <option value="$PROJECT_DIR$/nfsconfig.json" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/nfs_modules/nfs.js" />
         <option value="$PROJECT_DIR$/nfs_modules/n_file_info.js" />
         <option value="$PROJECT_DIR$/node_modules/qiniu/qiniu/storage/rs.js" />
         <option value="$PROJECT_DIR$/node_modules/mysql/lib/Pool.js" />
         <option value="$PROJECT_DIR$/node_modules/express/node_modules/qs/dist/qs.js" />
         <option value="$PROJECT_DIR$/nfs_modules/result.js" />
+        <option value="$PROJECT_DIR$/nfs_modules/nfs.js" />
       </list>
     </option>
   </component>
@@ -238,7 +235,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="34" />
     <option name="y" value="26" />
     <option name="width" value="1278" />
@@ -273,11 +270,6 @@
               <item name="nfs-nodefileserver" type="b2602c69:ProjectViewProjectNode" />
               <item name="nfs-nodefileserver" type="462c0819:PsiDirectoryNode" />
               <item name="nfs_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nfs-nodefileserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nfs-nodefileserver" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nfs-nodefileserver" type="b2602c69:ProjectViewProjectNode" />
@@ -348,12 +340,12 @@
       <workItem from="1516162109123" duration="12160000" />
       <workItem from="1516178850361" duration="30000" />
       <workItem from="1516179163691" duration="903000" />
-      <workItem from="1516240779948" duration="25318000" />
+      <workItem from="1516240779948" duration="27697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143232000" />
+    <option name="totallyTimeSpent" value="145611000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -365,7 +357,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -374,11 +366,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29322034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37118644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37118644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -417,20 +409,8 @@
           <line>94</line>
           <option name="timeStamp" value="149" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/nfs_modules/ali_backup.js</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="167" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/nfs_modules/ali_backup.js</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="168" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="183" />
+      <option name="time" value="186" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -572,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/makedir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -607,14 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -717,14 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2988">
-          <caret line="416" column="29" lean-forward="false" selection-start-line="416" selection-start-column="29" selection-end-line="416" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ali-oss/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -737,105 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="221" lean-forward="false" selection-start-line="4" selection-start-column="221" selection-end-line="4" selection-end-column="221" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/ali_backup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="114" column="52" lean-forward="false" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
-          <folding>
-            <element signature="e#502#1257#0" expanded="false" />
-            <element signature="n#!!block;n#fileFilter#0" expanded="false" />
-            <element signature="e#1808#2203#0" expanded="false" />
-            <element signature="e#2302#2759#0" expanded="false" />
-            <element signature="e#2814#3048#0" expanded="false" />
-            <element signature="e#3103#3337#0" expanded="false" />
-            <element signature="e#3393#5664#0" expanded="false" />
-            <element signature="e#5710#5939#0" expanded="false" />
-            <element signature="e#5986#6269#0" expanded="false" />
-            <element signature="e#6315#6559#0" expanded="false" />
-            <element signature="e#6607#6858#0" expanded="false" />
-            <element signature="e#6907#7162#0" expanded="false" />
-            <element signature="e#7216#7312#0" expanded="false" />
-            <element signature="e#7364#7458#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/nfs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="66" column="35" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-          <folding>
-            <element signature="e#506#1108#0" expanded="false" />
-            <element signature="e#1209#1793#0" expanded="false" />
-            <element signature="e#2087#2230#0" expanded="false" />
-            <element signature="e#2528#2536#0" expanded="false" />
-            <element signature="e#2585#2740#0" expanded="false" />
-            <element signature="e#2828#2965#0" expanded="false" />
-            <element signature="e#3013#3157#0" expanded="false" />
-            <element signature="e#3272#3280#0" expanded="false" />
-            <element signature="e#3369#3377#0" expanded="false" />
-            <element signature="e#3435#3443#0" expanded="false" />
-            <element signature="e#3508#3639#0" expanded="false" />
-            <element signature="e#3686#3828#0" expanded="false" />
-            <element signature="e#3872#4364#0" expanded="false" />
-            <element signature="e#4406#4656#0" expanded="false" />
-            <element signature="e#4725#5600#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/n_file_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding>
-            <element signature="e#2673#4201#0" expanded="false" />
-            <element signature="e#4270#5051#0" expanded="false" />
-            <element signature="e#5135#5916#0" expanded="false" />
-            <element signature="e#5980#6645#0" expanded="false" />
-            <element signature="e#6719#8058#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/n_temp_file_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="13" column="68" lean-forward="false" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
-          <folding>
-            <element signature="e#482#2885#0" expanded="false" />
-            <element signature="e#2952#3752#0" expanded="false" />
-            <element signature="e#3824#5196#0" expanded="false" />
-            <element signature="e#5259#8343#0" expanded="false" />
-            <element signature="e#8410#9952#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/qiniu_backup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs_modules/result.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -871,6 +729,134 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs_modules/n_temp_file_info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="247" column="23" lean-forward="false" selection-start-line="247" selection-start-column="23" selection-end-line="247" selection-end-column="23" />
+          <folding>
+            <element signature="e#482#2885#0" expanded="false" />
+            <element signature="e#2952#3752#0" expanded="false" />
+            <element signature="e#3824#5196#0" expanded="false" />
+            <element signature="e#5259#8343#0" expanded="false" />
+            <element signature="e#8410#9952#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="416" column="29" lean-forward="false" selection-start-line="416" selection-start-column="29" selection-end-line="416" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="114" column="52" lean-forward="false" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
+          <folding>
+            <element signature="e#502#1257#0" expanded="false" />
+            <element signature="n#!!block;n#fileFilter#0" expanded="false" />
+            <element signature="e#1808#2203#0" expanded="false" />
+            <element signature="e#2302#2759#0" expanded="false" />
+            <element signature="e#2814#3048#0" expanded="false" />
+            <element signature="e#3103#3337#0" expanded="false" />
+            <element signature="e#3393#5664#0" expanded="false" />
+            <element signature="e#5710#5939#0" expanded="false" />
+            <element signature="e#5986#6269#0" expanded="false" />
+            <element signature="e#6315#6559#0" expanded="false" />
+            <element signature="e#6607#6858#0" expanded="false" />
+            <element signature="e#6907#7162#0" expanded="false" />
+            <element signature="e#7364#7458#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs_modules/nfs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="134" column="41" lean-forward="true" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+          <folding>
+            <element signature="e#506#1108#0" expanded="false" />
+            <element signature="e#1209#1793#0" expanded="false" />
+            <element signature="e#1871#2020#0" expanded="false" />
+            <element signature="e#2098#2241#0" expanded="false" />
+            <element signature="e#2308#2456#0" expanded="false" />
+            <element signature="e#2539#2547#0" expanded="false" />
+            <element signature="e#2596#2751#0" expanded="false" />
+            <element signature="e#2839#2976#0" expanded="false" />
+            <element signature="e#3024#3168#0" expanded="false" />
+            <element signature="e#3283#3291#0" expanded="false" />
+            <element signature="e#3380#3388#0" expanded="false" />
+            <element signature="e#3446#3454#0" expanded="false" />
+            <element signature="e#3519#3650#0" expanded="false" />
+            <element signature="e#3697#3839#0" expanded="false" />
+            <element signature="e#4736#5611#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs_modules/ali_backup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs_modules/makedir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding>
+            <element signature="e#128#792#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs_modules/n_file_info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="110" column="58" lean-forward="false" selection-start-line="110" selection-start-column="58" selection-end-line="110" selection-end-column="58" />
+          <folding>
+            <element signature="e#406#2607#0" expanded="false" />
+            <element signature="e#2673#4201#0" expanded="false" />
+            <element signature="e#4270#5051#0" expanded="false" />
+            <element signature="e#4302#5037#0" expanded="false" />
+            <element signature="e#5135#5916#0" expanded="false" />
+            <element signature="e#5980#6645#0" expanded="false" />
+            <element signature="e#6719#8058#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs_modules/result.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#119#504#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs_modules/qiniu_backup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

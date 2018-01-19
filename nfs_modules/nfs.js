@@ -50,7 +50,7 @@ var nfs = {
     //根据文件id获取文件信息，多个文件id以逗号隔开
     getFilesInfo:function (fileIds,callback) {
         var nFile = new nfsFile();
-        nFile.GetFileInfo(fileIds,function (result) {
+        nFile.GetFileInfo(fileIds.split(','),function (result) {
             callback(result);
         });
     },
