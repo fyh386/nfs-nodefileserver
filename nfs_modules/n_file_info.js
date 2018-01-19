@@ -110,7 +110,7 @@ nfsFile.prototype.DeleteFile = function(fileIds,callback){
 //获取文件信息
 nfsFile.prototype.GetFileInfo = function(fileIds,callback){
     if(nfsconfig.openDatabase){
-        var fileIds = fileIds.split(',').join("','");
+        var fileIds = fileIds.join("','");
         var sql ="select * from n_file_info where id in ('"+fileIds+"')";
         //var sql = "select * from n_file_info where id in ('6ff8d240-fb2c-11e7-b162-2b923e671e29','f161e6a0-fa8c-11e7-abd6-7f16b36b493c')"
         // get a connection from the pool

@@ -118,13 +118,37 @@ router.use('/downLoadFiles',function (req,res,next) {
     if(!!fileIds){
         //文件数大于1自动压缩下载
         if(fileIds.length>1){
-
-
+            nfs.compressFiles(fileIds,function (zipPath) {
+                var filePath =zipPath ;
+                var stats = fs.statSync(filePath);
+                if(stats.isFile()){
+                    res.set({
+                        'Content-Type': 'application/octet-stream',
+                        'Content-Disposition': 'attachment; filename='+encodeURI(uuid.v1()+".zip"),
+                        'Content-Length': stats.size
+                    });
+                    fs.createReadStream(filePath).pipe(res);
+                } else {
+                    res.end(404);
+                }
+            });
         }else{
             //参数为空或为false单个文件都不压缩
             if(isZip=="true"){
-
-
+                nfs.compressFiles(fileIds,function (zipPath) {
+                    var filePath =zipPath ;
+                    var stats = fs.statSync(filePath);
+                    if(stats.isFile()){
+                        res.set({
+                            'Content-Type': 'application/octet-stream',
+                            'Content-Disposition': 'attachment; filename='+encodeURI(uuid.v1()+".zip"),
+                            'Content-Length': stats.size
+                        });
+                        fs.createReadStream(filePath).pipe(res);
+                    } else {
+                        res.end(404);
+                    }
+                });
             }else {
                 nfs.getFilesInfo(fileIds,function (fileInfo) {
                     var filePath =fileInfo.path ;

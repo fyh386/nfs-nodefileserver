@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "ali-oss": "^4.11.4",
+    "archiver": "^2.1.1",
     "body-parser": "~1.18.2",
     "co": "^4.6.0",
     "cookie-parser": "~1.4.3",

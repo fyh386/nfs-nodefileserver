@@ -1,6 +1,8 @@
 var fs = require('fs');
 var nfsFile = require("./n_file_info");
 
+var archiver = require("../node_modules/archiver");
+
 var nfsTempFile = require("./n_temp_file_info");
 
 var qiNiuBack = require("./qiniu_backup");
@@ -134,6 +136,30 @@ var nfs = {
         backObj.uploadFile(filePath,function (results) {
             callback(results);
         })
+    },
+    //压缩文件用于下载时的文件压缩
+    compressFiles:function (fileIds,callback) {
+        var nFile = new nfsFile();
+        var files = new Array();
+        nFile.GetFileInfo(fileIds,function (results) {
+            var zipPath =nfsconfig.zipFilePath+ 'test.zip';
+            //创建一最终打包文件的输出流
+            var output = fs.createWriteStream(zipPath);
+            output.on('close', function() {
+                callback(zipPath);
+            });
+            //生成archiver对象，打包类型为zip
+            var zipArchiver = archiver('zip');
+            //将打包对象与输出流关联
+            zipArchiver.pipe(output);
+            for(var i=0; i < results.data.length; i++) {
+                console.log(files[i]);
+                //将被打包文件的流添加进archiver对象中
+                zipArchiver.append(fs.createReadStream(results.data[i].path), {'name': results.data[i].name+"."+results.data[i].expand_name});
+            }
+            //打包
+            zipArchiver.finalize();
+        });
     }
 }
 
